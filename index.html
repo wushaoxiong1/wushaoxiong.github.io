@@ -24,7 +24,7 @@
 			
 			// 获取密码
 			var passwordValue = $("#password").val();
-			var passwordReg = /^\w{5,15}$/;
+			var passwordReg = /^\w{5,15}\d$/;
 			// 验证用户信息
 			if (!passwordReg.test(passwordValue)) {
 				// 提示用户
@@ -57,7 +57,7 @@
 								<span class="errorMsg">请输入用户名和密码</span>
 							</div>
 							<div class="form">
-								<form action="https://wushaoxiong1.github.io/" method="get">
+								<form action="https://wushaoxiong1.github.io/主页.html" method="get">
 									<label>用户名称：</label>
 									<input class="itxt" type="text" placeholder="请输入用户名" autocomplete="off" 
 										tabindex="1" name="username" id="username"/>
