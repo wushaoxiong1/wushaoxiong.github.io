@@ -1,63 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
- <head>
-  <meta charset="UTF-8">
-  <meta name="Generator" content="EditPlus®">
-  <meta name="Author" content="wsx">
-  <meta name="Keywords" content="">
-  <meta name="Description" content="欢迎来到王的主页！">
-  <title>我的主页</title>
- </head>
-	<style> 
-		header{
-				background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(1.jpg);
-				height: 100vh;	/*使图片占满屏幕*/
-				background-size: cover;
-				background-position: center;
-				}
-		p{
-				font-size:30px;
-				color:red;
-		}
-		ul{
-				float: left;
-				margin: 20px;
-        }
-        ul li{
-                display: inline-block;/*在元素之后不添加换行符，因此该元素可以位于其他元素旁边，实现水平显示列表项*/
-        }
-        ul li a{
-				text-decoration: none;
-				color: #abc;
-				padding: 6px 30px;
-				border: 1px solid transparent;/*使边框颜色透明*/
-				transition: .6s ease;/*设置过度效果*/
-				border-radius: 20px;/*设置圆角*/
-        }
-		ul li a:hover{		/*鼠标悬停在li的a上时的样式*/
-                background-color: #fff;
 
-        }
-        .title{  position:absolute;
-		         top:40%;
-                 left:38%;
-				 font-size:25px;
-			   };
-	</style>
- <body>
-  <header>
-        <div class="main">
-            <ul>
-                <li ><a href="https://zjj3305209100.github.io/">首页</a></li>
-                <li><a href="https://github.com/ZJJ3305209100.html" target="_blank">简介</a></li>
-                <li><a href="日常作业.html"  target="_blank">每周作业</a></li>
-                <li><a href="https://github.com/ZJJ3305209100?tab=repositories" target="_blank">我的仓库 </a></li>
-                <p>请点击作业查看每周作业</p>
-            </ul>
-        </div>
-      <div class="title">
-            <h1><span style="color: red;">wsx's</span> Homepage</h1>
-        </div>
-    </header>
- </body>
- <html>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>登录页面</title>
+
+<script type="text/javascript">
+	// 页面加载完成之后
+	$(function(){
+		
+		// 给注册按钮添加事件
+		$("#sub_btn").click(function(){
+			
+			// 获取用户名
+			var usernameValue = $("#username").val();
+			// 验证用户名是否合法,规则如下：必须由字母，数字，下划线组成，并且长度为5到15位。
+			var usernameReg = /^\w{5,15}$/;
+			// 验证用户信息
+			if (!usernameReg.test(usernameValue)) {
+				// 提示用户
+				alert("用户名不合法！");
+				return false;
+			}
+			
+			// 获取密码
+			var passwordValue = $("#password").val();
+			// 验证密码是否合法,规则如下：必须由字母，数字，下划线组成，并且长度为5到15位。
+			var passwordReg = /^\w{5,15}$/;
+			// 验证用户信息
+			if (!passwordReg.test(passwordValue)) {
+				// 提示用户
+				alert("密码不合法！");
+				return false;
+			}
+			
+			// 阻止表单提交
+			return true;
+		});
+		
+	});
+
+</script>
+
+</head>
+<body>
+		
+			<div class="login_banner">
+			
+				<div id="l_content">
+					<span class="login_word">欢迎登录</span>
+				</div>
+				
+				<div id="content">
+					<div class="login_form">
+						<div class="login_box">
+							<div class="msg_cont">
+								<b></b>
+								<span class="errorMsg">请输入用户名和密码</span>
+							</div>
+							<div class="form">
+								<form action="https://wushaoxiong1.github.io/" method="get">
+									<label>用户名称：</label>
+									<input class="itxt" type="text" placeholder="请输入用户名" autocomplete="off" 
+										tabindex="1" name="username" id="username"/>
+									<br />
+									<br />
+									<label>用户密码：</label>
+									<input class="itxt" type="password" placeholder="请输入密码" autocomplete="off" 
+									 	tabindex="1" name="password" id="password"
+									/>
+									<br />
+									<br />
+									<input type="submit" value="登录" id="sub_btn" />
+								</form>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		<div id="bottom">
+		</div>
+</body>
+</html>
