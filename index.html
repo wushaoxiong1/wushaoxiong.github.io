@@ -1,116 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="utf-8">
-      <meta name="keywords" content="吴绍雄1">
-	  <title>吴绍雄的网站</title>
-	  <style>
-nav{
-	background-color:black;
-		  }
-.navbar ul{
-    display: flex;
-}
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="wsx">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="欢迎来到王的主页！">
+  <title>我的主页</title>
+ </head>
+	<style> 
+		header{
+				background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(1.jpg);
+				height: 100vh;	/*使图片占满屏幕*/
+				background-size: cover;
+				background-position: center;
+				}
+		p{
+				font-size:30px;
+				color:red;
+		}
+		ul{
+				float: left;
+				margin: 20px;
+        }
+        ul li{
+                display: inline-block;/*在元素之后不添加换行符，因此该元素可以位于其他元素旁边，实现水平显示列表项*/
+        }
+        ul li a{
+				text-decoration: none;
+				color: #abc;
+				padding: 6px 30px;
+				border: 1px solid transparent;/*使边框颜色透明*/
+				transition: .6s ease;/*设置过度效果*/
+				border-radius: 20px;/*设置圆角*/
+        }
+		ul li a:hover{		/*鼠标悬停在li的a上时的样式*/
+                background-color: #fff;
 
-.navbar ul li{
-    font-weight: bold;
-    width: 128px;
-    list-style: none;
-    text-align:center;
-}
-.navbar ul li a {
-    width: 128px;
-    line-height: 45px;
-    font-size: 1.7rem;
-    color: white;
-}
-.navbar ul li a:hover{
-    color: #009933;
-}
-/* 二级菜单样式 */
-.navbar ul li ul{
-    position: absolute;
-    display: none;
-    width: 128px;
-    line-height: 45px;
-}
-
-.navbar ul li ul li{
-    background-color: #3F3D56;
-}
-/* 悬浮展开二级菜单 */
-.navbar ul li ul li a:hover{
-    color: white;
-}
-.navbar ul li ul li:hover{
-    background-color: #009933;
-}
-
-.navbar ul li:hover ul{
-    display: block;
-}
-/* 网站内容*/
-.content{
-    margin-top:50px;
-}
-	  </style>
-  </head>
-<body>
-	<h1 align="center">wushaoxiong</h1>
-	<nav class="navbar">
+        }
+        .title{  position:absolute;
+		         top:40%;
+                 left:38%;
+				 font-size:25px;
+			   };
+	</style>
+ <body>
+  <header>
+        <div class="main">
             <ul>
-                <li><a href="#">首页</a></li>
-                <li><a href="#">专业介绍</a></li>
-                <li><a href="#">作业</a>
-                    <ul class="hide">
-                        <li><a href="#">作业1</a></li>
-                        <li><a href="#">作业2</a></li>
-                        <li><a href="#">作业3</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">队伍</a>
-                    <ul class="hide">
-                        <li><a href="#">成员1</a></li>
-                        <li><a href="#">成员2</a></li>
-                        <li><a href="#">成员3</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">学习指南</a></li>
-                <li><a href="#">后台管理</a></li>
+                <li ><a href="https://zjj3305209100.github.io/">首页</a></li>
+                <li><a href="https://github.com/ZJJ3305209100.html" target="_blank">简介</a></li>
+                <li><a href="日常作业.html"  target="_blank">每周作业</a></li>
+                <li><a href="https://github.com/ZJJ3305209100?tab=repositories" target="_blank">我的仓库 </a></li>
+                <p>请点击作业查看每周作业</p>
             </ul>
-        </nav>
-    </div>
-    <div class="content">
-        <h1>这是网站的内容</h1>
-    </div>
-	<ul>
-		<li><a href="#lijianhong">课堂学习</a></li>
-				<li><a href="https://github.com/" target=_blank>github官方网站</a></li>
-	</ul>
-	<div >
-	                              有我陪伴　多苦都变成甜 
-                                  睁开眼就看见永远<br />
-                                  给我你的心作纪念　我的梦有你的祝福才能够完全<br />
-                                  风浪再大　我也会勇往直前<br />
-                                  我们的爱　镶在青春的纪念册<br />
-                                  去年夏天<br />
-                                  数着贝壳和浪花的海边
-                                  我们祈祷着明年的今天
-                                  <br />
-                                  还能够保持这样无忧笑脸
-                                  你是夏天<br />
-                                  有海风吹过棕榈的蓝天
-                                  让我忘记了眼泪有多咸<br />
-                                  你一出现就是晴天
-                                  还想听你任性的说<br />
-                                  要带我去环游世界
-                                  就算整个世界都改变<br />
-                                  也不改变　为你勇敢的自己
-                                  给你我的心作纪念　这份爱<br />
-                                  任何时刻你打开都新鲜
-                                  有我陪伴　多苦都变成甜<br />
-                                  睁开眼就看见永远<br /></div>
-	<br>
-	<a href="#">回到顶部</a>
-</body>
-</html>
+        </div>
+      <div class="title">
+            <h1><span style="color: red;">wsx's</span> Homepage</h1>
+        </div>
+    </header>
+ </body>
+ <html>
