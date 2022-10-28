@@ -14,7 +14,6 @@
 			
 			// 获取用户名
 			var usernameValue = $("#username").val();
-			// 验证用户名是否合法,规则如下：必须由字母，数字，下划线组成，并且长度为5到15位。
 			var usernameReg = /^\w{5,15}$/;
 			// 验证用户信息
 			if (!usernameReg.test(usernameValue)) {
@@ -25,7 +24,6 @@
 			
 			// 获取密码
 			var passwordValue = $("#password").val();
-			// 验证密码是否合法,规则如下：必须由字母，数字，下划线组成，并且长度为5到15位。
 			var passwordReg = /^\w{5,15}$/;
 			// 验证用户信息
 			if (!passwordReg.test(passwordValue)) {
