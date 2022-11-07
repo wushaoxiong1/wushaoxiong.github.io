@@ -5,14 +5,14 @@
 <meta charset="UTF-8">
 <title>登录页面</title>
 </head>
-	<script type="text/jquery">
+	<script>
 	// 页面加载完成之后
 		
 		// 给注册按钮添加事件
 		document.getElementById("sub_btn").click() = function  a(){
 			
 			// 获取用户名
-			var usernameValue = document.getElementById("usename").val;
+			var usernameValue = document.getElementById("username").val;
 			var usernameReg = /^[\一-\龥]{3}$/;
 			// 验证用户信息
 			if (!usernameReg.test(usernameValue)) {
@@ -22,7 +22,7 @@
 			}
 			
 			// 获取密码
-			var passwordValue = document.getElementById("usename").val;
+			var passwordValue = document.getElementById("password").val;
 			var passwordReg = 20010618;
 			// 验证用户信息
 			if (!passwordReg.test(passwordValue)) {
@@ -33,7 +33,7 @@
 			
 			// 阻止表单提交
 			return true;
-		});
+		}
 </script>
 <style type="text/css">
 			header{
